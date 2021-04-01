@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void moveSms(View view) {
-        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("sms:" + "082293489531")).putExtra("sms_body", "Sarangheyo Oppa"));
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("sms:" + "082293489531")).putExtra("sms_body", "Hai, nama saya hidayatullah"));
     }
 
     public void exit(View view) {
