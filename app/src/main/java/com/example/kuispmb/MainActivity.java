@@ -26,9 +26,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("geo:-3.48323,119.1294786")).setPackage("com.google.android.apps.maps"));
     }
 
-    public void moveSms(View view) {
-        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("sms:" + "082293489531")).putExtra("sms_body", "Hai, nama saya hidayatullah"));
-    }
+   public void moveTelephone(View view) {
+        String nomor1 = ("082293489531");
+        Intent dialnomor = new
+                Intent(Intent.ACTION_DIAL);
+        dialnomor.setData(Uri.fromParts("tel",nomor1,null));
+        startActivity(dialnomor);
+   }
 
     public void exit(View view) {
         logout(this);
